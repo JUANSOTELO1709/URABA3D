@@ -26,10 +26,10 @@ document.addEventListener('alpine:init', () => {
                 base_price: 100000,
                 description: 'QR en 3D con chip NFC integrado. Al acercarlo a un teléfono, redirige al enlace que elijas: perfil de Instagram, WhatsApp Business, menú digital, portafolio, lo que quieras. Ideal para negocios y profesionales. Chip NFC adicional: +$5.000.',
                 colors: [
-                    { id: 1,  name: 'Negro',   hex_code: '#111111' },
-                    { id: 2,  name: 'Blanco',  hex_code: '#f5f5f5' },
-                    { id: 3,  name: 'Naranja', hex_code: '#FF6B00' },
-                    { id: 4,  name: 'Otro color (consultar)', hex_code: '#888888' },
+                    { id: 1, name: 'Negro',   hex_code: '#111111' },
+                    { id: 2, name: 'Blanco',  hex_code: '#f5f5f5' },
+                    { id: 3, name: 'Naranja', hex_code: '#FF6B00' },
+                    { id: 4, name: 'Otro color (consultar)', hex_code: '#888888' },
                 ],
                 sizes: [
                     { id: 1, label: 'Sin chip adicional',      price_modifier: 0    },
@@ -77,8 +77,8 @@ document.addEventListener('alpine:init', () => {
                 description: 'Figura de tu mascota en 3D, de 15 cm de altura. Basada en fotos reales: capturamos los rasgos únicos de tu perro, gato u otra mascota. Incluye pintura a mano. Para figuras de más de 15 cm se aplica un cargo adicional según tamaño y complejidad.',
                 colors: [],
                 sizes: [
-                    { id: 5, label: '15 cm (precio base)',         price_modifier: 0      },
-                    { id: 6, label: 'Más de 15 cm (cotizar)',      price_modifier: 0      },
+                    { id: 5, label: '15 cm (precio base)',    price_modifier: 0 },
+                    { id: 6, label: 'Más de 15 cm (cotizar)', price_modifier: 0 },
                 ],
                 fabrication_days: 15,
                 is_featured: true,
@@ -101,9 +101,9 @@ document.addEventListener('alpine:init', () => {
                 fabrication_days: 15,
                 is_featured: true,
                 photos: [
-                    { id: 1, url: './img/productos/funko-familia-tres.jpg',      is_primary: true  },
-                    { id: 2, url: './img/productos/funko-mujer-perro-sofa.jpg',  is_primary: false },
-                    { id: 3, url: './img/productos/funko-grupo-amigos.jpg',      is_primary: false },
+                    { id: 1, url: './img/productos/funko-familia-tres.jpg',        is_primary: true  },
+                    { id: 2, url: './img/productos/funko-grupo-amigos.jpg',        is_primary: false },
+                    { id: 3, url: './img/productos/funko-mujer-perro-sofa.jpg',    is_primary: false },
                     { id: 4, url: './img/productos/funko-ninas-personalizadas.jpg', is_primary: false },
                 ],
                 primary_photo_url: './img/productos/funko-familia-tres.jpg',
@@ -127,19 +127,19 @@ document.addEventListener('alpine:init', () => {
                     { id: 7, name: 'Otro color (consultar)', hex_code: '#888888' },
                 ],
                 sizes: [
-                    { id: 8,  label: '1–49 unidades ($15.000 c/u)',   price_modifier: 0 },
-                    { id: 9,  label: '50–99 unidades ($11.000 c/u)',  price_modifier: 0 },
-                    { id: 10, label: '100+ unidades ($9.500 c/u)',    price_modifier: 0 },
+                    { id: 8,  label: '1–49 unidades ($15.000 c/u)',  price_modifier: 0 },
+                    { id: 9,  label: '50–99 unidades ($11.000 c/u)', price_modifier: 0 },
+                    { id: 10, label: '100+ unidades ($9.500 c/u)',   price_modifier: 0 },
                 ],
                 fabrication_days: 10,
                 is_featured: false,
                 photos: [
-                    { id: 1, url: './img/productos/llavero-placa-colombia.jpg',        is_primary: true  },
-                    { id: 2, url: './img/productos/llavero-figura-personalizada.jpg',  is_primary: false },
-                    { id: 3, url: './img/productos/llavero-logo-meraki.jpg',           is_primary: false },
-                    { id: 4, url: './img/productos/llavero-set-barco-contenedores.jpg',is_primary: false },
+                    { id: 1, url: './img/productos/llavero-set-barco-contenedores.jpg', is_primary: true  },
+                    { id: 2, url: './img/productos/llavero-figura-personalizada.jpg',   is_primary: false },
+                    { id: 3, url: './img/productos/llavero-logo-meraki.jpg',            is_primary: false },
+                    { id: 4, url: './img/productos/llavero-placa-colombia.jpg',         is_primary: false },
                 ],
-                primary_photo_url: './img/productos/llavero-placa-colombia.jpg',
+                primary_photo_url: './img/productos/llavero-set-barco-contenedores.jpg',
                 available: true,
             },
 
@@ -151,10 +151,10 @@ document.addEventListener('alpine:init', () => {
                 base_price: 20000,
                 description: 'Materas impresas en 3D con el diseño, tamaño y personalización que quieras. El precio varía según el tamaño, la complejidad del diseño y el nivel de personalización. Todas incluyen orificio de drenaje. Escríbenos con tus medidas e ideas.',
                 colors: [
-                    { id: 1, name: 'Negro',      hex_code: '#111111' },
-                    { id: 2, name: 'Blanco',     hex_code: '#f5f5f5' },
-                    { id: 3, name: 'Terracota',  hex_code: '#B85C38' },
-                    { id: 4, name: 'Verde',      hex_code: '#38a169' },
+                    { id: 1, name: 'Negro',     hex_code: '#111111' },
+                    { id: 2, name: 'Blanco',    hex_code: '#f5f5f5' },
+                    { id: 3, name: 'Terracota', hex_code: '#B85C38' },
+                    { id: 4, name: 'Verde',     hex_code: '#38a169' },
                     { id: 7, name: 'Otro color (consultar)', hex_code: '#888888' },
                 ],
                 sizes: [
@@ -164,11 +164,11 @@ document.addEventListener('alpine:init', () => {
                 fabrication_days: 7,
                 is_featured: false,
                 photos: [
-                    { id: 1, url: './img/productos/matera-busto-david-planta.jpg', is_primary: true  },
-                    { id: 2, url: './img/productos/matera-busto-caballo.jpg',      is_primary: false },
-                    { id: 3, url: './img/productos/matera-busto-david-dorado.jpg', is_primary: false },
+                    { id: 1, url: './img/productos/matera-busto-caballo.jpg',      is_primary: true  },
+                    { id: 2, url: './img/productos/matera-busto-david-dorado.jpg', is_primary: false },
+                    { id: 3, url: './img/productos/matera-busto-david-planta.jpg', is_primary: false },
                 ],
-                primary_photo_url: './img/productos/matera-busto-david-planta.jpg',
+                primary_photo_url: './img/productos/matera-busto-caballo.jpg',
                 available: true,
             },
 
@@ -216,10 +216,10 @@ document.addEventListener('alpine:init', () => {
                 fabrication_days: 10,
                 is_featured: false,
                 photos: [
-                    { id: 1, url: './img/productos/letrero-prohibido-parquear.jpg', is_primary: true  },
-                    { id: 2, url: './img/productos/letrero-logo-uraba3d.jpg',       is_primary: false },
+                    { id: 1, url: './img/productos/letrero-logo-uraba3d.jpg',       is_primary: true  },
+                    { id: 2, url: './img/productos/letrero-prohibido-parquear.jpg', is_primary: false },
                 ],
-                primary_photo_url: './img/productos/letrero-prohibido-parquear.jpg',
+                primary_photo_url: './img/productos/letrero-logo-uraba3d.jpg',
                 available: true,
             },
 
@@ -238,7 +238,9 @@ document.addEventListener('alpine:init', () => {
                 sizes: [],
                 fabrication_days: 10,
                 is_featured: false,
-                photos: [], primary_photo_url: null, available: true,
+                photos: [],
+                primary_photo_url: null,
+                available: true,
             },
         ],
 
@@ -338,4 +340,19 @@ document.addEventListener('alpine:init', () => {
             if (n.includes('figura') || n.includes('funko') || n.includes('mascota')) return s('<path d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/>');
             if (n.includes('llavero')) return s('<path d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/>');
             if (n.includes('matera')) return s('<path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.354a15.055 15.055 0 01-4.5 0M3 9.75a9 9 0 1118 0v.75"/>');
-            if (n.includes('soporte') || n.includes('accesorio')) return s('<path d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.1
+            if (n.includes('soporte') || n.includes('accesorio')) return s('<path d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.959.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z"/>');
+            if (n.includes('letrero') || n.includes('negocio') || n.includes('aviso')) return s('<path d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016 2.993 2.993 0 002.25-1.016 3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.375.375 0 00.375-.375v-1.5a.375.375 0 00-.375-.375h-3.75a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375z"/>');
+            if (n.includes('repuesto') || n.includes('pieza')) return s('<path d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>');
+            return s('<path d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.75 19.817m.72-5.988a42.41 42.41 0 0110.56 0m0 0L17.25 19.817M12 2.25l.75 4.5m0 0l-3 1.5m3-1.5l3 1.5"/>');
+        },
+
+        formatPrice(p) {
+            if (!p || p === 0) return 'Cotizar';
+            return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(p);
+        },
+
+        categoryName(id) {
+            return this.categories.find(c => c.id === id)?.name || '';
+        },
+    }));
+});
