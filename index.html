@@ -22,7 +22,7 @@
         extend: {
           colors: {
             // ── Para cambiar el acento, edita solo este valor ──
-            accent: '#FF6B00',
+            accent: '#ffffff',
             ink: {
               950: '#0a0a0a',
               900: '#111111',
@@ -58,12 +58,12 @@
     .glass-nav {
       background: rgba(10,10,10,0.97);
       backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(255,107,0,0.12);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     /* Tarjetas de producto */
     .product-card { transition: transform .22s cubic-bezier(.34,1.56,.64,1), box-shadow .22s ease, border-color .22s ease; }
-    .product-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px -12px rgba(255,107,0,.2); border-color: rgba(255,107,0,.35) !important; }
+    .product-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px -12px rgba(255,255,255,.08); border-color: rgba(255,255,255,.3) !important; }
     .product-card .card-overlay { opacity:0; transition: opacity .2s ease; }
     .product-card:hover .card-overlay { opacity:1; }
 
@@ -73,18 +73,18 @@
       font-size: .8125rem; font-weight: 600; color: #a0a0a0;
       transition: all .15s ease; background: transparent; cursor: pointer;
     }
-    .sbtn.active, .sbtn:hover { border-color: #FF6B00; color: #FF6B00; background: rgba(255,107,0,.08); }
+    .sbtn.active, .sbtn:hover { border-color: #ffffff; color: #ffffff; background: rgba(255,255,255,.08); }
 
     /* Punto de color */
     .cdot {
       width: 1.75rem; height: 1.75rem; border-radius: 50%; border: 2.5px solid transparent;
       cursor: pointer; transition: all .15s ease;
     }
-    .cdot.active { border-color: #FF6B00; box-shadow: 0 0 0 2px #0a0a0a, 0 0 0 4px #FF6B00; }
+    .cdot.active { border-color: #ffffff; box-shadow: 0 0 0 2px #0a0a0a, 0 0 0 4px #ffffff; }
 
     /* Grid de miniaturas */
     .gthumb { width: 3.5rem; height: 3.5rem; object-fit: cover; border-radius: .4rem; border: 2px solid transparent; cursor: pointer; transition: all .15s; }
-    .gthumb.active { border-color: #FF6B00; }
+    .gthumb.active { border-color: #ffffff; }
 
     /* Patrón de fondo — líneas finas diagonales industriales */
     body {
@@ -93,8 +93,8 @@
         -45deg,
         transparent,
         transparent 24px,
-        rgba(255,107,0,.025) 24px,
-        rgba(255,107,0,.025) 25px
+        rgba(255,255,255,.012) 24px,
+        rgba(255,255,255,.012) 25px
       );
     }
 
@@ -104,17 +104,17 @@
     }
     .wa-float a {
       display: flex; align-items: center; gap: .5rem;
-      background: #25D366; color: #fff; font-weight: 700; font-size: .8125rem;
+      background: #ffffff; color: #000000; font-weight: 700; font-size: .8125rem;
       padding: .65rem 1.1rem; border-radius: 9999px;
-      box-shadow: 0 8px 24px rgba(37,211,102,.35); transition: all .2s ease;
+      box-shadow: 0 8px 24px rgba(255,255,255,.15); transition: all .2s ease;
     }
-    .wa-float a:hover { background: #20c05a; transform: translateY(-2px); box-shadow: 0 12px 30px rgba(37,211,102,.45); }
+    .wa-float a:hover { background: #e8e8e8; transform: translateY(-2px); box-shadow: 0 12px 30px rgba(255,255,255,.2); }
 
     /* Scrollbar oscuro */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #111; }
     ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #FF6B00; }
+    ::-webkit-scrollbar-thumb:hover { background: #ffffff; }
 
     /* Input de búsqueda dark */
     .search-input {
@@ -123,11 +123,11 @@
       transition: all .2s ease;
     }
     .search-input::placeholder { color: rgba(255,255,255,.35); }
-    .search-input:focus { background: rgba(255,255,255,.1); border-color: rgba(255,107,0,.5); outline: none; }
+    .search-input:focus { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.45); outline: none; }
 
     /* Categoría tab activa */
     .cat-tab { transition: all .18s ease; }
-    .cat-tab.active { background: #FF6B00 !important; color: #fff !important; border-color: #FF6B00 !important; }
+    .cat-tab.active { background: #ffffff !important; color: #000000 !important; border-color: #ffffff !important; }
   </style>
 </head>
 
@@ -137,12 +137,12 @@
 
   <!-- ══ NAVBAR ══════════════════════════════════════════════════ -->
   <nav class="glass-nav sticky top-0 z-40">
-    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center gap-4">
+    <div class="max-w-6xl mx-auto px-4 h-[72px] flex items-center gap-4">
 
       <!-- Logo -->
       <a href="/" class="flex-shrink-0">
         <img src="./img/logo.jpg" alt="Urabá3D Studios"
-             style="height:38px;width:auto;filter:invert(1);mix-blend-mode:screen;">
+             style="height:54px;width:auto;filter:invert(1);mix-blend-mode:screen;">
       </a>
 
       <!-- Buscador desktop -->
@@ -154,7 +154,7 @@
 
       <!-- WhatsApp button -->
       <a href="https://wa.me/573113584262" target="_blank"
-         class="flex-shrink-0 flex items-center gap-2 bg-accent hover:bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold transition-all shadow-sm">
+         class="flex-shrink-0 flex items-center gap-2 bg-white hover:bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-bold transition-all shadow-sm">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         WhatsApp
       </a>
@@ -190,13 +190,13 @@
     <!-- Decoración angular — líneas industriales -->
     <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
       <!-- Rectángulo de acento esquina superior derecha -->
-      <div class="absolute top-0 right-0 w-64 h-64 opacity-[.04]" style="background:linear-gradient(135deg,#FF6B00 0%,transparent 60%)"></div>
+      <div class="absolute top-0 right-0 w-64 h-64 opacity-[.04]" style="background:linear-gradient(135deg,rgba(255,255,255,1) 0%,transparent 60%)"></div>
       <!-- Líneas diagonales geométricas -->
       <svg class="absolute top-0 right-0 w-[480px] h-[480px]" viewBox="0 0 480 480" fill="none" style="opacity:.06">
-        <line x1="480" y1="0"   x2="0"   y2="480" stroke="#FF6B00" stroke-width="1"/>
-        <line x1="480" y1="60"  x2="60"  y2="480" stroke="white"   stroke-width="0.5"/>
-        <line x1="480" y1="120" x2="120" y2="480" stroke="white"   stroke-width="0.5"/>
-        <line x1="480" y1="180" x2="180" y2="480" stroke="#FF6B00" stroke-width="0.4"/>
+        <line x1="480" y1="0"   x2="0"   y2="480" stroke="white" stroke-width="1"/>
+        <line x1="480" y1="60"  x2="60"  y2="480" stroke="white" stroke-width="0.5"/>
+        <line x1="480" y1="120" x2="120" y2="480" stroke="white" stroke-width="0.5"/>
+        <line x1="480" y1="180" x2="180" y2="480" stroke="white" stroke-width="0.4"/>
         <line x1="380" y1="0"   x2="0"   y2="380" stroke="white"   stroke-width="0.4"/>
       </svg>
       <!-- "3D" decorativo fondo -->
@@ -205,14 +205,14 @@
 
     <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
       <!-- Badge -->
-      <div class="inline-flex items-center gap-2 border border-accent/30 bg-accent/10 rounded-full px-4 py-1.5 text-sm font-medium text-orange-300 mb-8 animate-fade-in">
+      <div class="inline-flex items-center gap-2 border border-white/20 bg-white/8 rounded-full px-4 py-1.5 text-sm font-medium text-white/60 mb-8 animate-fade-in">
         <span class="w-2 h-2 bg-accent rounded-full animate-pulse-slow"></span>
         Fabricamos en Apartadó · Envíos a toda Colombia
       </div>
 
       <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-none mb-5 tracking-tight animate-fade-up">
         Tu idea<br>
-        <span style="color:#FF6B00">en 3D.</span>
+        <span class="text-white">en 3D.</span>
       </h1>
       <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-lg leading-relaxed animate-fade-up" style="animation-delay:.1s">
         Tarjetas y QR con chip NFC, figuras personalizadas, llaveros, materas y mucho más. Diseñado e impreso en Apartadó, con envíos a toda Colombia.
@@ -239,7 +239,7 @@
       <!-- CTAs -->
       <div class="flex flex-wrap gap-3 animate-fade-up" style="animation-delay:.3s">
         <button onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})"
-                class="bg-accent hover:bg-orange-500 text-white font-bold px-7 py-3.5 rounded-full transition-all shadow-lg hover:shadow-accent/30 hover:-translate-y-0.5 text-sm">
+                class="bg-white hover:bg-gray-100 text-black font-bold px-7 py-3.5 rounded-full transition-all shadow-lg hover:shadow-white/20 hover:-translate-y-0.5 text-sm">
           Ver catálogo completo
         </button>
         <a href="https://wa.me/573113584262?text=Hola%20Urabá3D%20Studios%2C%20quiero%20un%20pedido%20personalizado" target="_blank"
@@ -375,7 +375,7 @@
             </div>
           </div>
           <a href="https://wa.me/573113584262?text=Hola%2C%20quiero%20ver%20más%20del%20proceso%20de%20impresión" target="_blank"
-             class="inline-flex items-center gap-2 mt-7 bg-accent hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-full text-sm transition-all shadow-md hover:shadow-accent/25">
+             class="inline-flex items-center gap-2 mt-7 bg-white hover:bg-gray-100 text-black font-bold px-6 py-3 rounded-full text-sm transition-all shadow-md hover:shadow-white/20">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
             Pregúntanos sobre el proceso
           </a>
@@ -465,12 +465,12 @@
               <div class="text-accent/30" x-html="catIconSVG(categoryName(p.category_id)).replace('w-5 h-5','w-10 h-10')"></div>
               <!-- Líneas diagonales decorativas de marca -->
               <div class="absolute inset-0 opacity-[.04]"
-                   style="background: repeating-linear-gradient(-45deg,#FF6B00,#FF6B00 1px,transparent 1px,transparent 8px)"></div>
+                   style="background: repeating-linear-gradient(-45deg,rgba(255,255,255,0.12),rgba(255,255,255,0.12) 1px,transparent 1px,transparent 8px)"></div>
             </div>
             <!-- Overlay en hover -->
-            <div class="card-overlay absolute inset-0 bg-accent/10 flex items-end justify-end p-3">
-              <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center shadow-lg">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            <div class="card-overlay absolute inset-0 bg-white/8 flex items-end justify-end p-3">
+              <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg">
+                <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
               </div>
             </div>
           </div>
@@ -501,7 +501,7 @@
         <p class="text-xl font-bold text-white mb-2">Sin resultados</p>
         <p class="text-gray-500 text-sm mb-6">No encontramos productos con ese criterio.</p>
         <button @click="searchQuery=''; selectedCategory=null"
-                class="bg-accent hover:bg-orange-500 text-white font-bold px-6 py-2.5 rounded-full text-sm transition-all">
+                class="bg-white hover:bg-gray-100 text-black font-bold px-6 py-2.5 rounded-full text-sm transition-all">
           Ver todo el catálogo
         </button>
       </div>
@@ -516,7 +516,7 @@
       <div>
         <div class="mb-4">
           <img src="./img/logo.jpg" alt="Urabá3D Studios"
-               style="height:34px;width:auto;filter:invert(1);mix-blend-mode:screen;">
+               style="height:46px;width:auto;filter:invert(1);mix-blend-mode:screen;">
         </div>
         <p class="text-gray-500 text-sm leading-relaxed">Fabricamos tus ideas en 3D con materiales de calidad. Apartadó, Urabá, Colombia.</p>
       </div>
@@ -603,7 +603,7 @@
               <div class="text-accent/25" x-html="catIconSVG(categoryName(product?.category_id)).replace('w-5 h-5','w-12 h-12')"></div>
               <p class="text-gray-700 text-xs uppercase tracking-widest">Sin foto disponible aún</p>
               <div class="absolute inset-0 opacity-[.04]"
-                   style="background: repeating-linear-gradient(-45deg,#FF6B00,#FF6B00 1px,transparent 1px,transparent 8px)"></div>
+                   style="background: repeating-linear-gradient(-45deg,rgba(255,255,255,0.12),rgba(255,255,255,0.12) 1px,transparent 1px,transparent 8px)"></div>
             </div>
             <button x-show="product?.photos?.length > 1" @click="currentPhoto = (currentPhoto - 1 + product.photos.length) % product.photos.length"
                     class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-black/60 rounded-full flex items-center justify-center text-white hover:bg-accent transition-all">‹</button>
@@ -666,12 +666,12 @@
           <!-- CTAs -->
           <div class="flex flex-col gap-2.5 mt-auto pt-1">
             <button @click="openWhatsApp()"
-                    class="flex items-center justify-center gap-2.5 bg-green-600 hover:bg-green-500 text-white font-black py-3.5 rounded-xl transition-all shadow-md active:scale-95">
+                    class="flex items-center justify-center gap-2.5 bg-white hover:bg-gray-100 text-black font-black py-3.5 rounded-xl transition-all shadow-md active:scale-95">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               Pedir por WhatsApp
             </button>
             <button @click="openOrder()"
-                    class="flex items-center justify-center gap-2.5 bg-accent hover:bg-orange-500 text-white font-black py-3.5 rounded-xl transition-all shadow-md active:scale-95">
+                    class="flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-black py-3.5 rounded-xl transition-all shadow-md active:scale-95">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 7H4l1-7z"/></svg>
               Hacer pedido
             </button>
